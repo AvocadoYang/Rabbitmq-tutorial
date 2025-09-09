@@ -1,0 +1,29 @@
+{
+  "name": "winston",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pro": "ts-node-dev --exit-child  --watch --respawn  ./helloWorld/producer.ts",
+    "rec": "ts-node-dev --exit-child  --watch --respawn  ./helloWorld/receiver.ts",
+
+    "w_pro": "ts-node-dev --exit-child  --watch --respawn  ./workQueues/new_task.ts",
+    "w_rec": "ts-node-dev --exit-child  --watch --respawn  ./workQueues/worker.ts",
+
+    "e_pro": "ts-node-dev --exit-child  --watch --respawn  ./pub-sub/producer.ts",
+    "e_rec": "ts-node-dev --exit-child  --watch --respawn  ./pub-sub/receiver.ts",
+
+    "r_pro": "ts-node-dev --exit-child  --watch --respawn  ./routing/emit_log_direct.ts",
+    "r_rec": "ts-node-dev --exit-child  --watch --respawn  ./routing/receive_logs_direct.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/amqplib": "^0.10.7",
+    "amqplib": "^0.10.9",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "winston": "^3.13.0"
+  }
+}
