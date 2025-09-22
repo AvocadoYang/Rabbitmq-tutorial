@@ -14,7 +14,10 @@
     "e_rec": "ts-node-dev --exit-child  --watch --respawn  ./pub-sub/receiver.ts",
 
     "r_pro": "ts-node-dev --exit-child  --watch --respawn  ./routing/emit_log_direct.ts",
-    "r_rec": "ts-node-dev --exit-child  --watch --respawn  ./routing/receive_logs_direct.ts"
+    "r_rec": "ts-node-dev --exit-child  --watch --respawn  ./routing/receive_logs_direct.ts",
+
+    "q_pro": "ts-node-dev --exit-child  --watch --respawn  ./quorum-queue/producer.ts",
+    "q_rec": "ts-node-dev --exit-child  --watch --respawn  ./quorum-queue/consumer.ts"
   },
   "author": "",
   "license": "ISC",
